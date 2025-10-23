@@ -1,0 +1,21 @@
+node_modules/
+dist/
+build/
+coverage/
+.vscode/
+.idea/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+public/
+/*.min.js
+**/*.min.js
+
+# optional: ignore compiled and output folders
+out/
+coverage/
+
+# lockfiles and logs
+npm-debug.log
+pnpm-debug.log
+yarn-error.log
