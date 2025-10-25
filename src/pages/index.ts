@@ -1,0 +1,7 @@
+export { default as Education } from "./Education";
+export { default as Experience } from "./Experience";
+export { default as Home } from "./Home";
+export { default as NotFound } from "./NotFound";
+export { default as Person } from "./Person";
+export { default as Skills } from "./Skills";
+
