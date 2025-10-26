@@ -1,0 +1,18 @@
+{
+  "header": {
+    "title": "< RITA NUNES />",
+    "nav": {
+      "primaryNav": "Primary Navigation",
+      "home": "Home",
+      "skills": "The Skills",
+      "experience": "The Experience",
+      "education": "The Education",
+      "person": "The Person"
+    }
+  },
+  "notFound": {
+    "title": "404 - Page Not Found",
+    "message": "Sorry, the page you are looking for does not exist.",
+    "homeLink": "Go back to Home"
+  }
+}

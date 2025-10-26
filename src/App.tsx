@@ -1,19 +1,12 @@
-import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
-import "./App.css";
-import Navbar from "./components/Navbar";
-import {
-  Education,
-  Experience,
-  Home,
-  NotFound,
-  Person,
-  Skills,
-} from "./pages";
+import { Route, BrowserRouter as Router, Routes } from 'react-router-dom'
+import './App.css'
+import { Header } from './components'
+import { Education, Experience, Home, NotFound, Person, Skills } from './pages'
 
 function App() {
   return (
     <Router>
-      <Navbar />
+      <Header />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/skills" element={<Skills />} />
@@ -23,7 +16,7 @@ function App() {
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>
-  );
+  )
 }
 
-export default App;
+export default App
