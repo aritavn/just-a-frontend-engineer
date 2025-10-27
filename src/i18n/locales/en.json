@@ -10,6 +10,15 @@
       "person": "The Person"
     }
   },
+  "homepage": {
+    "hero": {
+      "subtitle": "just a",
+      "title1": "FRONTEND",
+      "title2": "ENGINEER",
+      "contactButton": "GET IN TOUCH",
+      "contactAriaLabel": "Contact me via email"
+    }
+  },
   "notFound": {
     "title": "404 - Page Not Found",
     "message": "Sorry, the page you are looking for does not exist.",
