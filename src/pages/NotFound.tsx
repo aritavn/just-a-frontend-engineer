@@ -1,8 +1,8 @@
-import { useTranslation } from 'react-i18next'
-import { Link } from 'react-router-dom'
+import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 
 const NotFound = () => {
-  const { t } = useTranslation()
+  const { t } = useTranslation();
   return (
     <main>
       <h1>{t('notFound.title')}</h1>
@@ -11,7 +11,7 @@ const NotFound = () => {
         <Link to="/">{t('notFound.homeLink')}</Link>
       </p>
     </main>
-  )
-}
+  );
+};
 
-export default NotFound
+export default NotFound;

@@ -15,6 +15,13 @@
       "subtitle": "just a",
       "title1": "FRONTEND",
       "title2": "ENGINEER",
+      "typingSubtitle": {
+        "sentence1": "building pixel-perfect interfaces_",
+        "sentence2": "creating seamless experiences_",
+        "sentence3": "prioritizing accessible, inclusive design_",
+        "sentence4": "pushing web boundaries_",
+        "sentence5": "optimizing for performance_"
+      },
       "contactButton": "GET IN TOUCH",
       "contactAriaLabel": "Contact me via email"
     }

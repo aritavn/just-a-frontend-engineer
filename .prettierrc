@@ -9,7 +9,7 @@
   "jsxSingleQuote": false,
   "bracketSpacing": true,
   "bracketSameLine": true,
-  "endOfLine": "lf",
+  "endOfLine": "crlf",
   "singleAttributePerLine": true,
   "plugins": []
 }

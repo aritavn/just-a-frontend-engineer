@@ -1,16 +1,21 @@
-import { useTranslation } from 'react-i18next'
-import { Link, NavLink } from 'react-router-dom'
-import './Header.css'
+import { useTranslation } from 'react-i18next';
+import { Link, NavLink } from 'react-router-dom';
+import './Header.css';
 
 const Header = () => {
-  const { t } = useTranslation()
+  const { t } = useTranslation();
   return (
     <header id="header">
-      <Link className="title" to="/" aria-label={t('header.nav.home')}>
+      <Link
+        className="title"
+        to="/"
+        aria-label={t('header.nav.home')}>
         {t('header.title')}
       </Link>
 
-      <nav className="nav-links" aria-label={t('header.primaryNav')}>
+      <nav
+        className="nav-links"
+        aria-label={t('header.primaryNav')}>
         <ul>
           <li>
             <NavLink to="/skills">{t('header.nav.skills')}</NavLink>
@@ -27,7 +32,7 @@ const Header = () => {
         </ul>
       </nav>
     </header>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;
