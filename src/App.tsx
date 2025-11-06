@@ -1,6 +1,6 @@
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import './App.css';
-import { Header } from './components';
+import { Footer, Header } from './components';
 import { Education, Experience, Home, NotFound, Person, Skills } from './pages';
 
 function App() {
@@ -35,6 +35,7 @@ function App() {
           />
         </Routes>
       </main>
+      <Footer />
     </Router>
   );
 }

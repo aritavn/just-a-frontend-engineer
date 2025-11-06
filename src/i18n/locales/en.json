@@ -26,6 +26,16 @@
       "contactAriaLabel": "Contact me via email"
     }
   },
+  "footer": {
+    "footerTitle": "Let's build something together",
+    "footerSubtitle": "Always open to discussing new projects and opportunities",
+    "copyright": "© 2025 Rita Nunes // Built with passion and caffeine.",
+    "footerLinks": {
+      "email": "Email",
+      "github": "GitHub",
+      "linkedin": "LinkedIn"
+    }
+  },
   "notFound": {
     "title": "404 - Page Not Found",
     "message": "Sorry, the page you are looking for does not exist.",
