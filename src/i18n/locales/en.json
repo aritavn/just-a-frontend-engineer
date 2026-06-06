@@ -24,6 +24,19 @@
       },
       "contactButton": "GET IN TOUCH",
       "contactAriaLabel": "Contact me via email"
+    },
+    "about": {
+      "sectionTitle": "Introduction",
+      "title": "About Me",
+      "paragraph1": "Just a <strong>Frontend Engineer</strong> living in Lisbon, inspired by the intersection of <strong>design and technology</strong>. Lisbon taught me to see beauty in details, from the colourful tiles to the glow of the afternoon light over the rooftops. That sense of design and harmony naturally found its way into my work.",
+      "paragraph2": "I love transforming complex problems into elegant, performant <strong>web experiences</strong> that feel effortless to users. With deep expertise in <strong>modern JavaScript frameworks</strong> and an eye for design, I'm driven by the challenge of creating interfaces that are both visually engaging and technically refined.",
+      "paragraph3": "For me, the web is a canvas, and code is just another way to paint.",
+      "photoAlt": "Profile image"
+    }
+  },
+  "pages": {
+    "common": {
+      "section": "Section:"
     }
   },
   "footer": {
