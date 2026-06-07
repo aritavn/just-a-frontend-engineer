@@ -24,6 +24,12 @@ body {
     -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
 }
 
+section {
+  padding: 150px 60px;
+  position: relative;
+  z-index: 2;
+}
+
 .btn {
   padding: 20px 50px;
   font-size: 16px;
@@ -93,4 +99,16 @@ body {
     width: 100%;
     text-align: center;
   }
+
+  nav,
+  section,
+  footer {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+.education-container {
+  max-width: 1000px;
+  margin: 0 auto;
 }

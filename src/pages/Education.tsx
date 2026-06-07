@@ -1,12 +1,22 @@
 import { useTranslation } from 'react-i18next';
+import { EducationCard, SectionHeader } from '../components';
+import { education } from '../data/education';
 
 const Education = () => {
   const { t } = useTranslation();
 
   return (
-    <main>
-      <h1>{t('header.nav.education')}</h1>
-    </main>
+    <section id="education">
+      <SectionHeader
+        sectionHighlightText={t('pages.education.sectionHighlight')}
+        sectionLabelText={t('pages.education.sectionTitle')}
+        sectionTitleText={t('pages.education.title')}
+      />
+
+      <div className="education-container">
+        {education.map((ed, idx) => EducationCard(ed, idx))}
+      </div>
+    </section>
   );
 };
 

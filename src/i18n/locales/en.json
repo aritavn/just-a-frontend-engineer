@@ -37,6 +37,12 @@
   "pages": {
     "common": {
       "section": "Section:"
+    },
+    "education": {
+      "sectionHighlight": "Education",
+      "sectionTitle": "Academic Background",
+      "title": "The Education",
+      "volunteering": "Activities & Volunteering:"
     }
   },
   "footer": {
