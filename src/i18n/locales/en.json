@@ -43,12 +43,31 @@
       "sectionTitle": "Academic Background",
       "title": "The Education",
       "volunteering": "Activities & Volunteering:"
+    },
+    "experience": {
+      "sectionHighlight": "Experience",
+      "sectionTitle": "Career Journey",
+      "title": "The Experience",
+      "experienceCard": {
+        "toggleAriaLabel": "{{action}} details for {{title}}",
+        "toggleAction": {
+          "hide": "Hide",
+          "show": "Show"
+        },
+        "toggleTitle": {
+          "hide": "Hide details",
+          "show": "Show more"
+        },
+        "keyProjects": "Key Projects:",
+        "metricsLabel": "Impact Metrics:",
+        "eventsHighlights": "Events & Highlights:"
+      }
     }
   },
   "footer": {
     "footerTitle": "Let's build something together",
     "footerSubtitle": "Always open to discussing new projects and opportunities",
-    "copyright": "© 2025 Rita Nunes // Built with passion and caffeine.",
+    "copyright": "© {{year}} Rita Nunes // Built with passion and caffeine.",
     "footerLinks": {
       "email": "Email",
       "github": "GitHub",

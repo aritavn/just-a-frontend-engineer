@@ -1,0 +1,224 @@
+.exp-item {
+  border-left: 2px solid rgba(var(--accent-rgb), 0.2);
+  padding-left: 40px;
+  margin-bottom: 80px;
+  position: relative;
+  opacity: 1;
+  transform: none;
+  transition: none;
+}
+
+.exp-item::before {
+  content: '';
+  position: absolute;
+  left: -6px;
+  top: 0;
+  width: 10px;
+  height: 10px;
+  background: var(--accent);
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(var(--accent-rgb), 0.5);
+}
+
+.exp-date {
+  font-size: 14px;
+  color: var(--accent);
+  font-family: 'Courier New', monospace;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+.exp-item h2 {
+  font-size: 2rem;
+  color: var(--text-heading);
+  margin-bottom: 10px;
+  font-weight: 800;
+}
+
+.exp-company {
+  font-size: 1.2rem;
+  color: var(--muted);
+  margin-bottom: 20px;
+}
+
+.exp-metrics {
+  margin-top: 16px;
+  background: rgba(var(--accent-rgb), 0.05);
+  border: 1px solid rgba(var(--accent-rgb), 0.25);
+  padding: 14px 18px 12px;
+  position: relative;
+}
+
+.exp-metrics-label {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--accent);
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.exp-metrics-list {
+  list-style: disc;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 0.95rem;
+  color: var(--muted-2);
+}
+
+.exp-metric {
+  line-height: 1.35;
+}
+
+.exp-metric strong {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.exp-item ul {
+  list-style: none;
+}
+
+.exp-item li {
+  padding: 6px 0;
+  color: #aaa;
+  line-height: 1.7;
+  position: relative;
+  padding-left: 25px;
+}
+
+.exp-item li::before {
+  content: '>';
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+}
+
+.exp-summary-text {
+  margin-bottom: 12px;
+}
+
+.exp-project {
+  margin-top: 12px;
+}
+
+.exp-keywords {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 10px 0 0 0;
+  margin-bottom: 18px;
+}
+
+.exp-keyword-chip {
+  background: var(--accent);
+  color: #0f0f0f;
+  font-family: 'Courier New', monospace;
+  font-size: 0.95rem;
+  font-weight: 700;
+  padding: 6px 16px;
+  border-radius: 0;
+  box-shadow: 0 2px 8px rgba(var(--accent-rgb), 0.1);
+  letter-spacing: 1.5px;
+  border: 2px solid rgba(var(--accent-rgb), 0.18);
+  transition:
+    background 0.2s,
+    color 0.2s;
+  user-select: none;
+}
+
+.exp-keyword-chip:hover {
+  background: var(--bg-alt);
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+.exp-actions {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.exp-toggle {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  color: var(--muted);
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+[data-theme='light'] .exp-toggle {
+  border: 1px solid rgba(0, 0, 0, 0.15);
+}
+[data-theme='light'] .exp-toggle svg circle {
+  stroke: var(--accent);
+}
+[data-theme='light'] .exp-toggle svg rect {
+  fill: #0d0d0d;
+}
+[data-theme='light'][data-accent='pink'] .exp-toggle svg rect,
+[data-theme='light'][data-accent='coral'] .exp-toggle svg rect,
+[data-theme='light'][data-accent='blue'] .exp-toggle svg rect {
+  fill: #111;
+}
+
+.exp-panel {
+  overflow: hidden;
+  max-height: 0;
+  transition:
+    max-height 350ms cubic-bezier(0.2, 0.9, 0.2, 1),
+    opacity 250ms ease;
+  opacity: 0;
+}
+
+.exp-panel.open {
+  max-height: 2000px;
+  opacity: 1;
+  margin-top: 12px;
+}
+
+.exp-item.collapsed .exp-panel {
+  display: block;
+}
+
+.exp-toggle:focus {
+  outline: none;
+}
+
+.exp-toggle:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  box-shadow: 0 0 0 4px rgba(var(--accent-rgb), 0.35);
+  background: rgba(var(--accent-rgb), 0.08);
+}
+
+[data-theme='light'] .exp-toggle:focus-visible {
+  outline: 2px solid #1a1a2e;
+  box-shadow: 0 0 0 4px rgba(var(--accent-rgb), 0.4);
+  background: rgba(var(--accent-rgb), 0.1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .exp-panel {
+    transition: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .exp-item {
+    padding-left: 20px;
+    opacity: 1;
+    transform: none;
+  }
+  .exp-project-title {
+    font-size: 1rem;
+  }
+}
+
+:root[data-theme='light'] .exp-item li {
+  color: var(--text-secondary);
+}

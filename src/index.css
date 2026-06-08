@@ -112,3 +112,7 @@ section {
   max-width: 1000px;
   margin: 0 auto;
 }
+
+.experience-container {
+  max-width: 1200px;
+}

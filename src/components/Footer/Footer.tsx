@@ -14,16 +14,20 @@ const Footer = () => {
         </a>
         <a
           href="https://github.com/aritavn"
-          target="_blank">
+          target="_blank"
+        >
           {t('footer.footerLinks.github')}
         </a>
         <a
           href="https://www.linkedin.com/in/a-rita-v-nunes/"
-          target="_blank">
+          target="_blank"
+        >
           {t('footer.footerLinks.linkedin')}
         </a>
       </div>
-      <p className="copyright">{t('footer.copyright')}</p>
+      <p className="copyright">
+        {t('footer.copyright', { year: new Date().getFullYear() })}
+      </p>
     </footer>
   );
 };
