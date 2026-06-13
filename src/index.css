@@ -1,11 +1,82 @@
+/* Base (dark) theme variables */
 :root {
-  --accent: #64ffda;
-  --accent-rgb: 100, 255, 218;
-  --muted: #94a3b8;
-  --header-bg: rgba(15, 15, 15, 0.8);
+  --bg: #0f0f0f;
+  --bg-alt: #151515;
+  --text: #ffffff;
+  --text-heading: #ffffff;
+  --text-secondary: #cccccc;
+  --text-intro: #bbb;
+  --muted: #888;
+  --muted-2: #aaa;
+  --border: rgba(255, 255, 255, 0.12);
+  --accent: #00ff88;
+  --accent-2: #00d4aa;
+  --accent-rgb: 0, 255, 136;
+  --accent-text: #0f0f0f;
+  --focus-ring: rgba(var(--accent-rgb), 0.4);
+  --shadow-color: 0, 0, 0;
+  color-scheme: dark;
+}
 
-  --bg: #0f0f10;
-  --text: #e5e7eb;
+/* Dark theme accent palette variants */
+:root[data-theme='magenta']:not([data-theme='light']) {
+  --accent: #ff00a2;
+  --accent-2: #d46cd6;
+  --accent-rgb: 255, 0, 162;
+  --muted: #bdb3bd;
+}
+
+:root[data-theme='green']:not([data-theme='light']) {
+  --accent: #00ff88;
+  --accent-2: #00d4aa;
+  --accent-rgb: 0, 255, 136;
+  --muted: #9fd8c8;
+}
+
+:root[data-theme='yellow']:not([data-theme='light']) {
+  --accent: #ffd93b;
+  --accent-2: #ffb347;
+  --accent-rgb: 255, 217, 59;
+  --muted: #d8cfa2;
+}
+
+/* Light theme (top-level override) */
+:root[data-theme='light'] {
+  --bg: #ffffff;
+  --bg-alt: #f8f9fa;
+  --text: #1a1a2e;
+  --text-heading: #1a1a2e;
+  --text-secondary: #555;
+  --text-intro: #333;
+  --muted: #6c757d;
+  --muted-2: #6c757d;
+  --border: #e9ecef;
+  --accent: #ff6b6b;
+  --accent-2: #ff8787;
+  --accent-rgb: 255, 107, 107;
+  --accent-text: #ffffff;
+  --focus-ring: rgba(var(--accent-rgb), 0.45);
+  --shadow-color: 0, 0, 0;
+  color-scheme: light;
+}
+
+/* Light mode accent variations */
+:root[data-theme='light'][data-accent='coral'] {
+  --accent: #ff6b6b;
+  --accent-2: #ff8787;
+  --accent-rgb: 255, 107, 107;
+}
+
+:root[data-theme='light'][data-accent='pink'] {
+  --accent: #ff4fa3;
+  --accent-2: #ff7fbf;
+  --accent-rgb: 255, 79, 163;
+}
+
+:root[data-theme='light'][data-accent='blue'] {
+  --accent: #4facfe;
+  --accent-2: #00f2fe;
+  --accent-rgb: 79, 172, 254;
 }
 
 html,

@@ -10,6 +10,15 @@
       "person": "The Person",
       "closeMenu": "Close Menu",
       "openMenu": "Open Menu"
+    },
+    "themeSwitcher": {
+      "ariaLabel": "Theme switcher",
+      "accentColor": "Accent color choices",
+      "activateTheme": "Activate {{mode}} theme",
+      "light": "Light",
+      "dark": "Dark",
+      "switchAccent": "Switch accent to {{accent}}",
+      "themeIconAriaLabel": "Theme icon"
     }
   },
   "homepage": {

@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link, NavLink } from 'react-router-dom';
+import ThemeSwitcher from '../ThemeSwitcher/ThemeSwitcher';
 import './Header.css';
 import MenuIcon from './MenuIcon';
 
@@ -8,6 +9,13 @@ const Header = () => {
   const { t } = useTranslation();
 
   const [open, setOpen] = useState(false);
+
+  const navItems = [
+    { to: '/skills', label: 'header.nav.skills' },
+    { to: '/experience', label: 'header.nav.experience' },
+    { to: '/education', label: 'header.nav.education' },
+    { to: '/person', label: 'header.nav.person' },
+  ];
 
   function toggle(): void {
     setOpen((o) => !o);
@@ -29,7 +37,9 @@ const Header = () => {
       </Link>
 
       <button
+        type="button"
         className={`nav-toggle ${open ? 'open' : ''}`}
+        aria-controls="header-nav"
         aria-label={open ? t('header.nav.closeMenu') : t('header.nav.openMenu')}
         aria-expanded={open}
         onClick={toggle}
@@ -38,44 +48,25 @@ const Header = () => {
       </button>
 
       <nav
+        id="header-nav"
         className={`nav-links ${open ? 'open' : ''}`}
         aria-label={t('header.primaryNav')}
       >
         <ul>
-          <li>
-            <NavLink
-              to="/skills"
-              onClick={close}
-            >
-              {t('header.nav.skills')}
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              to="/experience"
-              onClick={close}
-            >
-              {t('header.nav.experience')}
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              to="/education"
-              onClick={close}
-            >
-              {t('header.nav.education')}
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              to="/person"
-              onClick={close}
-            >
-              {t('header.nav.person')}
-            </NavLink>
-          </li>
+          {navItems.map((item) => (
+            <li key={item.to}>
+              <NavLink
+                to={item.to}
+                onClick={close}
+              >
+                {t(item.label)}
+              </NavLink>
+            </li>
+          ))}
         </ul>
       </nav>
+
+      <ThemeSwitcher />
     </header>
   );
 };

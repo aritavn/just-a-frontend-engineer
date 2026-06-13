@@ -1,0 +1,7 @@
+<svg class="icon-4" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c.92 0 1.5-.92 1.5-1.5 0-.4-.15-.74-.38-1-.23-.27-.38-.61-.38-1 0-.83.67-1.5 1.5-1.5H16c3.31 0 6-2.69 6-6 0-4.96-4.48-9-10-9z" fill="none" stroke="#434343ff" stroke-width="2"/>
+    <circle class="palette-color" cx="6.5" cy="11.5" r="1.5" fill="#ff6b6b" opacity="0.6"/>
+    <circle class="palette-color" cx="9.5" cy="7.5" r="1.5" fill="#4facfe" opacity="0.6"/>
+    <circle class="palette-color" cx="14.5" cy="7.5" r="1.5" fill="#ffd93d" opacity="0.6"/>
+    <circle class="palette-color" cx="17.5" cy="11.5" r="1.5" fill="#6bcf7f" opacity="0.6"/>
+</svg>
