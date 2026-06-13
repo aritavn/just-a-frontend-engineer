@@ -7,7 +7,9 @@
       "skills": "The Skills",
       "experience": "The Experience",
       "education": "The Education",
-      "person": "The Person"
+      "person": "The Person",
+      "closeMenu": "Close Menu",
+      "openMenu": "Open Menu"
     }
   },
   "homepage": {
