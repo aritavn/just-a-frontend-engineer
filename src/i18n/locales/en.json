@@ -74,6 +74,28 @@
         "metricsLabel": "Impact Metrics:",
         "eventsHighlights": "Events & Highlights:"
       }
+    },
+    "person": {
+      "sectionHighlight": "Person",
+      "sectionTitle": "Beyond the code",
+      "title": "The Person",
+      "introParagraph": "I believe the best developers are well-rounded humans who bring diverse perspectives \nto problem-solving. When I'm not crafting interfaces, I'm exploring the world,\nlearning new skills, and staying curious about everything.",
+      "personalFactsAriaLabel": "Quick personal facts",
+      "interestBubblesAriaLabel": "Interest bubbles visual grouping",
+      "sectionLabel": "Section: Life In Motion",
+      "lifeInMotion": "Life in Motion",
+      "photoSlider": {
+        "sectionAriaLabel": "Photo slider showcasing life moments",
+        "carouselRoleDescription": "carousel",
+        "carouselAriaLabel": "Autoplay photo slides container",
+        "previousSlide": "Previous slide",
+        "nextSlide": "Next slide",
+        "pauseAutoplay": "Pause autoplay",
+        "resumeAutoplay": "Resume autoplay",
+        "goToSlide": "Go to slide {{slide}}",
+        "ariaLiveMessage": "Slide {{current}} of {{total}}: {{caption}}",
+        "slideDotsAriaLabel": "Select slide"
+      }
     }
   },
   "footer": {
