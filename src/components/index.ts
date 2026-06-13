@@ -4,4 +4,6 @@ export { default as ExperienceCard } from './ExperienceCard/ExperienceCard';
 export { default as Footer } from './Footer/Footer';
 export { default as Header } from './Header/Header';
 export { default as Hero } from './Hero/Hero';
+export { default as ScrollToTop } from './ScrollToTop/ScrollToTop';
 export { default as SectionHeader } from './SectionHeader/SectionHeader';
+export { default as SkipLink } from './SkipLink/SkipLink';

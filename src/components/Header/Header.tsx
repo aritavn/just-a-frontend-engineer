@@ -27,46 +27,48 @@ const Header = () => {
 
   return (
     <header id="header">
-      <Link
-        className="title"
-        to="/"
-        aria-label={t('header.nav.home')}
-        onClick={close}
-      >
-        {t('header.title')}
-      </Link>
+      <div className="header-inner">
+        <Link
+          className="title"
+          to="/"
+          aria-label={t('header.nav.home')}
+          onClick={close}
+        >
+          {t('header.title')}
+        </Link>
 
-      <button
-        type="button"
-        className={`nav-toggle ${open ? 'open' : ''}`}
-        aria-controls="header-nav"
-        aria-label={open ? t('header.nav.closeMenu') : t('header.nav.openMenu')}
-        aria-expanded={open}
-        onClick={toggle}
-      >
-        <MenuIcon />
-      </button>
+        <button
+          type="button"
+          className={`nav-toggle ${open ? 'open' : ''}`}
+          aria-controls="header-nav"
+          aria-label={open ? t('header.nav.closeMenu') : t('header.nav.openMenu')}
+          aria-expanded={open}
+          onClick={toggle}
+        >
+          <MenuIcon />
+        </button>
 
-      <nav
-        id="header-nav"
-        className={`nav-links ${open ? 'open' : ''}`}
-        aria-label={t('header.primaryNav')}
-      >
-        <ul>
-          {navItems.map((item) => (
-            <li key={item.to}>
-              <NavLink
-                to={item.to}
-                onClick={close}
-              >
-                {t(item.label)}
-              </NavLink>
-            </li>
-          ))}
-        </ul>
-      </nav>
+        <nav
+          id="header-nav"
+          className={`nav-links ${open ? 'open' : ''}`}
+          aria-label={t('header.primaryNav')}
+        >
+          <ul>
+            {navItems.map((item) => (
+              <li key={item.to}>
+                <NavLink
+                  to={item.to}
+                  onClick={close}
+                >
+                  {t(item.label)}
+                </NavLink>
+              </li>
+            ))}
+          </ul>
+        </nav>
 
-      <ThemeSwitcher />
+        <ThemeSwitcher />
+      </div>
     </header>
   );
 };

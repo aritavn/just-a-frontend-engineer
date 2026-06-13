@@ -32,14 +32,20 @@
   position: sticky;
   top: 0;
   z-index: 1000;
+  background: var(--header-bg);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(var(--accent-rgb), 0.1);
+}
+
+.header-inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 1.5rem;
-  padding: 1.5rem 2rem;
-  background: var(--header-bg);
-  backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(var(--accent-rgb), 0.1);
+  width: 100%;
+  max-width: var(--layout-max-width);
+  margin-inline: auto;
+  padding: 1.5rem var(--layout-inline-padding);
 }
 
 #header .title {
@@ -82,7 +88,7 @@
 .nav-links a::before {
   content: '>';
   position: absolute;
-  left: -15px;
+  left: -10px;
   opacity: 0;
   color: var(--accent);
   transition: all 0.3s ease;
@@ -90,7 +96,7 @@
 
 .nav-links a:hover::before {
   opacity: 1;
-  left: -20px;
+  left: -15px;
 }
 
 /* Mobile nav toggle */

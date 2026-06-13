@@ -10,8 +10,14 @@
 .hero-content {
   z-index: 2;
   text-align: left;
-  max-width: 1200px;
-  padding: 0 4rem;
+  width: 100%;
+  max-width: var(--layout-max-width);
+  padding: 0 var(--layout-inline-padding);
+}
+
+.hero-subtext {
+  display: inline-block;
+  max-width: 100%;
 }
 
 .hero-title {
@@ -35,10 +41,26 @@
 }
 
 .typing-effect {
+  display: grid;
   font-size: clamp(1.2rem, 3vw, 2rem);
   color: var(--muted);
   font-family: 'Courier New', monospace;
   margin-bottom: 3rem;
+}
+
+.typing-effect__sizer,
+.typing-effect__content {
+  grid-area: 1 / 1;
+}
+
+.typing-effect__sizer {
+  visibility: hidden;
+  pointer-events: none;
+  user-select: none;
+}
+
+.typing-effect__content {
+  min-width: 0;
 }
 
 .hero-sub {
@@ -54,6 +76,16 @@
   animation: blink 1s infinite;
 }
 
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
 .cta-area {
   display: flex;
   gap: 2rem;
@@ -66,5 +98,66 @@
   }
   .cta-area {
     flex-direction: column;
+  }
+  .hero-subtext .btn-secondary {
+    box-sizing: border-box;
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .scroll-indicator {
+    left: 16px !important;
+  }
+}
+
+.scroll-indicator {
+  position: absolute;
+  bottom: 100px;
+  left: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.scroll-line {
+  width: 2px;
+  height: 60px;
+  background: linear-gradient(to bottom, var(--accent), transparent);
+  animation: scrollMove 2s infinite;
+}
+
+@keyframes scrollMove {
+  0% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+}
+
+.scroll-text {
+  writing-mode: vertical-rl;
+  font-size: 12px;
+  color: var(--muted);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .typing-cursor {
+    animation: none;
+  }
+
+  .scroll-line {
+    animation: none;
+    opacity: 1;
+    transform: none;
   }
 }

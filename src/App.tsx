@@ -1,11 +1,12 @@
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import './App.css';
-import { Footer, Header } from './components';
+import { Footer, Header, ScrollToTop, SkipLink } from './components';
 import { Education, Experience, Home, NotFound, Person, Skills } from './pages';
 
 function App() {
   return (
     <Router>
+      <SkipLink />
       <Header />
       <main id="main-content">
         <Routes>
@@ -36,6 +37,7 @@ function App() {
         </Routes>
       </main>
       <Footer />
+      <ScrollToTop />
     </Router>
   );
 }

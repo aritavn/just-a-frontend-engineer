@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useMemo, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 import './Hero.css';
 
@@ -7,20 +7,49 @@ const Hero = () => {
   const typedRef = useRef<HTMLSpanElement>(null);
   const typingTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
-  useEffect(() => {
-    let textIndex: number = 0;
-    let charIndex: number = 0;
-    let isDeleting: boolean = false;
-    const sentences = [
+  const typingSentences = useMemo(
+    () => [
       t('homepage.hero.typingSubtitle.sentence1'),
       t('homepage.hero.typingSubtitle.sentence2'),
       t('homepage.hero.typingSubtitle.sentence3'),
       t('homepage.hero.typingSubtitle.sentence4'),
       t('homepage.hero.typingSubtitle.sentence5'),
-    ];
-    const typedEl = typedRef.current;
-    if (!typedEl) return;
-    typedEl.textContent = '';
+    ],
+    [t]
+  );
+
+  const longestTypingSentence = useMemo(
+    () =>
+      typingSentences.reduce(
+        (longest, sentence) =>
+          sentence.length > longest.length ? sentence : longest,
+        ''
+      ),
+    [typingSentences]
+  );
+
+  useEffect(() => {
+    if (!typedRef.current) return;
+
+    const motionQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
+    const sentences = typingSentences;
+    let textIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+
+    function clearTypingTimer() {
+      if (typingTimerRef.current) {
+        clearTimeout(typingTimerRef.current);
+        typingTimerRef.current = null;
+      }
+    }
+
+    function setStaticText() {
+      clearTypingTimer();
+      const element = typedRef.current;
+      if (!element) return;
+      element.textContent = sentences[0] ?? '';
+    }
 
     function tick() {
       const element = typedRef.current;
@@ -34,7 +63,6 @@ const Hero = () => {
 
       element.textContent = currentText.substring(0, charIndex);
 
-      // Completed typing whole word
       if (!isDeleting && charIndex === currentText.length) {
         typingTimerRef.current = setTimeout(() => {
           isDeleting = true;
@@ -43,7 +71,6 @@ const Hero = () => {
         return;
       }
 
-      // Completed deleting
       if (isDeleting && charIndex === 0) {
         isDeleting = false;
         textIndex = (textIndex + 1) % sentences.length;
@@ -55,13 +82,33 @@ const Hero = () => {
       typingTimerRef.current = setTimeout(tick, typingSpeed);
     }
 
-    // start typing loop
-    typingTimerRef.current = setTimeout(tick, 500);
+    function startTyping() {
+      clearTypingTimer();
+      const element = typedRef.current;
+      if (!element) return;
+      textIndex = 0;
+      charIndex = 0;
+      isDeleting = false;
+      element.textContent = '';
+      typingTimerRef.current = setTimeout(tick, 500);
+    }
+
+    function applyMotionPreference() {
+      if (motionQuery.matches) {
+        setStaticText();
+      } else {
+        startTyping();
+      }
+    }
+
+    applyMotionPreference();
+    motionQuery.addEventListener('change', applyMotionPreference);
 
     return () => {
-      if (typingTimerRef.current) clearTimeout(typingTimerRef.current);
+      clearTypingTimer();
+      motionQuery.removeEventListener('change', applyMotionPreference);
     };
-  }, [t]);
+  }, [typingSentences]);
 
   return (
     <section className="hero">
@@ -73,20 +120,38 @@ const Hero = () => {
             <span className="accent">{t('homepage.hero.title2')}</span>
           </h1>
         </div>
-        <div className="typing-effect">
-          <span
-            id="typed-text"
-            ref={typedRef}></span>
-          <span className="typing-cursor">|</span>
+        <div className="hero-subtext">
+          <div className="typing-effect">
+            <span
+              className="typing-effect__sizer"
+              aria-hidden="true"
+            >
+              {longestTypingSentence}
+              <span className="typing-cursor">|</span>
+            </span>
+            <span className="typing-effect__content">
+              <span
+                id="typed-text"
+                ref={typedRef}
+              ></span>
+              <span className="typing-cursor">|</span>
+            </span>
+          </div>
+          <div className="cta-area">
+            <a
+              href="mailto:anaritavn+portfolio@gmail.com"
+              className="btn btn-secondary"
+              aria-label={t('homepage.hero.contactAriaLabel')}
+            >
+              {t('homepage.hero.contactButton')}
+            </a>
+          </div>
         </div>
-        <div className="cta-area">
-          <a
-            href="mailto:anaritavn+portfolio@gmail.com"
-            className="btn btn-secondary"
-            aria-label={t('homepage.hero.contactAriaLabel')}>
-            {t('homepage.hero.contactButton')}
-          </a>
-        </div>
+      </div>
+
+      <div className="scroll-indicator">
+        <div className="scroll-line"></div>
+        <div className="scroll-text">{t('homepage.hero.scroll')}</div>
       </div>
     </section>
   );
