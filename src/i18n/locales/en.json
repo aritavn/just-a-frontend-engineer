@@ -96,6 +96,11 @@
         "ariaLiveMessage": "Slide {{current}} of {{total}}: {{caption}}",
         "slideDotsAriaLabel": "Select slide"
       }
+    },
+    "skills": {
+      "sectionHighlight": "Skills",
+      "sectionTitle": "Technical Arsenal",
+      "title": "The Skills"
     }
   },
   "footer": {

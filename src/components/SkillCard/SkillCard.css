@@ -1,0 +1,87 @@
+.skill-item {
+  background: var(--bg);
+  padding: 40px;
+  position: relative;
+  overflow: hidden;
+  transition:
+    background-color 220ms ease,
+    box-shadow 220ms ease,
+    transform 220ms cubic-bezier(0.25, 0.6, 0.3, 1),
+    border-color 220ms ease;
+  border: 1px solid rgba(var(--accent-rgb), 0.15);
+}
+
+.skill-item::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(
+    circle at 50% 50%,
+    rgba(var(--accent-rgb), 0.12),
+    transparent 70%
+  );
+  opacity: 0;
+  transition: opacity 220ms ease;
+}
+
+.skill-item:hover::before {
+  opacity: 1;
+}
+
+.skill-item:hover {
+  background-color: rgba(var(--accent-rgb), 0.05);
+  transform: translateY(-2px) scale(1.01);
+  box-shadow:
+    0 8px 18px -6px rgba(var(--accent-rgb), 0.35),
+    0 2px 8px -2px rgba(var(--accent-rgb), 0.25);
+  border-color: var(--accent);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .skill-item {
+    transition: none;
+  }
+  .skill-item:hover {
+    transform: none;
+    box-shadow: 0 0 0 2px rgba(var(--accent-rgb), 0.25);
+  }
+}
+
+.skill-number {
+  font-size: 14px;
+  color: var(--accent);
+  font-family: 'Courier New', monospace;
+  margin-bottom: 20px;
+}
+
+.skill-item h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: white;
+  font-weight: 800;
+}
+
+:root[data-theme='light'] .skill-item h2 {
+  color: #1a1a2e;
+}
+
+.skill-item ul {
+  list-style: none;
+}
+
+.skill-item li {
+  padding: 4px 0;
+  color: var(--muted);
+  font-size: 15px;
+  position: relative;
+  padding-left: 25px;
+}
+
+.skill-item li::before {
+  content: '▹';
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+  font-size: 18px;
+}

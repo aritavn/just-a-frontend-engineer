@@ -8,4 +8,5 @@ export { default as Interests } from './Interests/Interests';
 export { default as PhotoSlider } from './PhotoSlider/PhotoSlider';
 export { default as ScrollToTop } from './ScrollToTop/ScrollToTop';
 export { default as SectionHeader } from './SectionHeader/SectionHeader';
+export { default as SkillCard } from './SkillCard/SkillCard';
 export { default as SkipLink } from './SkipLink/SkipLink';
