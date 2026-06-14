@@ -4,6 +4,7 @@ export { default as ExperienceCard } from './ExperienceCard/ExperienceCard';
 export { default as Footer } from './Footer/Footer';
 export { default as Header } from './Header/Header';
 export { default as Hero } from './Hero/Hero';
+export { default as HomepageCards } from './HomePageCards/HomepageCards';
 export { default as Interests } from './Interests/Interests';
 export { default as PhotoSlider } from './PhotoSlider/PhotoSlider';
 export { default as ScrollToTop } from './ScrollToTop/ScrollToTop';

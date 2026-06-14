@@ -185,17 +185,6 @@
   display: block;
 }
 
-.exp-toggle:focus {
-  outline: none;
-}
-
-.exp-toggle:focus-visible {
-  outline: 2px solid var(--accent);
-  outline-offset: 3px;
-  box-shadow: 0 0 0 4px rgba(var(--accent-rgb), 0.35);
-  background: rgba(var(--accent-rgb), 0.08);
-}
-
 [data-theme='light'] .exp-toggle:focus-visible {
   outline: 2px solid #1a1a2e;
   box-shadow: 0 0 0 4px rgba(var(--accent-rgb), 0.4);

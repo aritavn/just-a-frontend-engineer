@@ -44,6 +44,40 @@
       "paragraph2": "I love transforming complex problems into elegant, performant <strong>web experiences</strong> that feel effortless to users. With deep expertise in <strong>modern JavaScript frameworks</strong> and an eye for design, I'm driven by the challenge of creating interfaces that are both visually engaging and technically refined.",
       "paragraph3": "For me, the web is a canvas, and code is just another way to paint.",
       "photoAlt": "Profile image"
+    },
+    "cards": {
+      "skills": {
+        "section": "TECHNICAL ARSENAL",
+        "titleLine1": "the",
+        "titleLine2": "skills",
+        "techStack": "Angular • JS • React",
+        "description": "Explore my technical toolkit, frameworks, and favorite tools for building modern web apps.",
+        "cta": "View skills"
+      },
+      "experience": {
+        "section": "CAREER JOURNEY",
+        "titleLine1": "the",
+        "titleLine2": "experience",
+        "techStack": "Frontend • Fullstack",
+        "description": "See my professional journey, roles, and impactful projects I've contributed to.",
+        "cta": "View experience"
+      },
+      "education": {
+        "section": "ACADEMIC BACKGROUND",
+        "titleLine1": "the",
+        "titleLine2": "education",
+        "techStack": "Degrees",
+        "description": "Discover my academic background and lifelong learning path.",
+        "cta": "View education"
+      },
+      "person": {
+        "section": "BEYOND THE CODE",
+        "titleLine1": "the",
+        "titleLine2": "person",
+        "techStack": "Traits • Interests",
+        "description": "Get to know my personality, interests, and what drives me as a creator and collaborator.",
+        "cta": "View person"
+      }
     }
   },
   "pages": {

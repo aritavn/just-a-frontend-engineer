@@ -1,9 +1,11 @@
 import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import { useLocation } from 'react-router-dom';
 import './ScrollToTop.css';
 
 const ScrollToTop = () => {
   const { t } = useTranslation();
+  const location = useLocation();
 
   const scrollToTop = () => globalThis.scrollTo({ top: 0, behavior: 'smooth' });
 
@@ -17,6 +19,10 @@ const ScrollToTop = () => {
     check();
     return () => globalThis.removeEventListener('scroll', check);
   }, []);
+
+  useEffect(() => {
+    globalThis.scrollTo({ top: 0, behavior: 'smooth' });
+  }, [location.pathname]);
 
   return (
     <button

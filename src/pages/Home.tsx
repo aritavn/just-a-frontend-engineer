@@ -1,10 +1,11 @@
-import { About, Hero } from '../components';
+import { About, Hero, HomepageCards } from '../components';
 
 const Home = () => {
   return (
     <>
       <Hero />
       <About />
+      <HomepageCards />
     </>
   );
 };
