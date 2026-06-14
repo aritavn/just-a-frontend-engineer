@@ -1,7 +1,21 @@
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import './App.css';
-import { Footer, Header, ScrollToTop, SkipLink } from './components';
-import { Education, Experience, Home, NotFound, Person, Skills } from './pages';
+import {
+  CookieConsent,
+  Footer,
+  Header,
+  ScrollToTop,
+  SkipLink,
+} from './components';
+import {
+  CookiePolicy,
+  Education,
+  Experience,
+  Home,
+  NotFound,
+  Person,
+  Skills,
+} from './pages';
 
 function App() {
   return (
@@ -31,12 +45,17 @@ function App() {
             element={<Person />}
           />
           <Route
+            path="/cookie-policy"
+            element={<CookiePolicy />}
+          />
+          <Route
             path="*"
             element={<NotFound />}
           />
         </Routes>
       </main>
       <Footer />
+      <CookieConsent />
       <ScrollToTop />
     </Router>
   );

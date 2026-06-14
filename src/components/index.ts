@@ -1,4 +1,5 @@
 export { default as About } from './About/About';
+export { default as CookieConsent } from './CookieConsent/CookieConsent';
 export { default as EducationCard } from './EducationCard/EducationCard';
 export { default as ExperienceCard } from './ExperienceCard/ExperienceCard';
 export { default as Footer } from './Footer/Footer';

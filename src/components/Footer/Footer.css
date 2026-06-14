@@ -59,3 +59,20 @@ footer {
   font-family: 'Courier New', monospace;
   margin-top: 1rem;
 }
+
+.footer-legal {
+  margin-top: 0.75rem;
+}
+
+.footer-legal-link {
+  color: #555;
+  font-size: 0.8rem;
+  font-family: 'Courier New', monospace;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  transition: color 0.2s ease;
+}
+
+.footer-legal-link:hover {
+  color: var(--accent);
+}

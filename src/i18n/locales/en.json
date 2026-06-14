@@ -145,6 +145,51 @@
       "email": "Email",
       "github": "GitHub",
       "linkedin": "LinkedIn"
+    },
+    "cookiePolicy": "Cookie Policy"
+  },
+  "cookiePolicy": {
+    "label": "Legal",
+    "title": "Cookie Policy",
+    "lastUpdated": "Last updated: June 2025",
+    "whatAreCookies": {
+      "heading": "What are cookies?",
+      "body": "Cookies are small text files placed on your device by websites you visit. They are widely used to make websites work, or work more efficiently, and to provide information to the owners of the site."
+    },
+    "howWeUse": {
+      "heading": "How we use cookies",
+      "body": "This portfolio uses only essential and functional cookies — no tracking or advertising cookies are used. The table below describes each cookie set by this site."
+    },
+    "table": {
+      "name": "Cookie Name",
+      "purpose": "Purpose",
+      "duration": "Duration",
+      "rows": {
+        "consent": {
+          "purpose": "Stores your cookie consent preference (accepted or declined).",
+          "duration": "1 year (localStorage)"
+        },
+        "theme": {
+          "purpose": "Remembers your preferred colour theme and accent colour.",
+          "duration": "Persistent (localStorage)"
+        },
+        "ga": {
+          "purpose": "Google Analytics — measures anonymous page views, session duration, and referral sources to help improve the site. Only loaded when cookies are accepted.",
+          "duration": "Up to 2 years"
+        }
+      }
+    },
+    "thirdParty": {
+      "heading": "Third-party cookies",
+      "body": "This site does not use any third-party analytics, advertising, or tracking services. No data is shared with external parties through cookies."
+    },
+    "yourChoices": {
+      "heading": "Your choices",
+      "body": "You can decline cookies via the consent banner. You can also clear cookies and localStorage data at any time through your browser settings. Note that declining cookies may affect theme preferences being saved between visits."
+    },
+    "contact": {
+      "heading": "Questions?",
+      "body": "If you have any questions about this cookie policy, feel free to reach out."
     }
   },
   "notFound": {
@@ -156,6 +201,13 @@
     "skipToMainContent": "Skip to main content",
     "skipToNavigation": "Skip to navigation",
     "skipToFooter": "Skip to footer",
-    "scrollToTop": "Scroll to top"
+    "scrollToTop": "Scroll to top",
+    "cookieConsent": {
+      "ariaLabel": "Cookie consent banner",
+      "message": "This site uses cookies to remember your theme preferences and measure anonymous usage via Google Analytics.",
+      "policyLink": "Learn more in our Cookie Policy.",
+      "accept": "Accept",
+      "decline": "Decline"
+    }
   }
 }

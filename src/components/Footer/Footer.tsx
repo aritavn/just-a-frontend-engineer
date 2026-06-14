@@ -1,4 +1,5 @@
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 import './Footer.css';
 
 const Footer = () => {
@@ -28,6 +29,14 @@ const Footer = () => {
       <p className="copyright">
         {t('footer.copyright', { year: new Date().getFullYear() })}
       </p>
+      <div className="footer-legal">
+        <Link
+          to="/cookie-policy"
+          className="footer-legal-link"
+        >
+          {t('footer.cookiePolicy')}
+        </Link>
+      </div>
     </footer>
   );
 };
