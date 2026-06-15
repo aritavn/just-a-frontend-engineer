@@ -1,4 +1,5 @@
 import { useTranslation } from 'react-i18next';
+import { SEO } from '../seo';
 import './CookiePolicy.css';
 
 const CookiePolicy = () => {
@@ -6,6 +7,12 @@ const CookiePolicy = () => {
 
   return (
     <div className="cookie-policy">
+      <SEO
+        title={t('seo.cookiePolicy.title')}
+        description={t('seo.cookiePolicy.description')}
+        path="/cookie-policy"
+      />
+
       <div className="cookie-policy-inner">
         <div className="cookie-policy-header">
           <span className="cookie-policy-label">

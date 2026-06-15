@@ -1,11 +1,18 @@
 import { useTranslation } from 'react-i18next';
 import { Interests, PhotoSlider, SectionHeader } from '../components';
+import { SEO } from '../seo';
 
 const Person = () => {
   const { t } = useTranslation();
 
   return (
     <section id="person">
+      <SEO
+        title={t('seo.person.title')}
+        description={t('seo.person.description')}
+        path="/person"
+      />
+
       <SectionHeader
         sectionHighlightText={t('pages.person.sectionHighlight')}
         sectionLabelText={t('pages.person.sectionTitle')}

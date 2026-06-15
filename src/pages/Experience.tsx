@@ -2,6 +2,7 @@ import { useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { ExperienceCard, SectionHeader } from '../components';
 import { experiences, type ExperienceItem } from '../data/experiences';
+import { SEO } from '../seo';
 
 const Experience = () => {
   const { t } = useTranslation();
@@ -21,6 +22,12 @@ const Experience = () => {
 
   return (
     <section id="experience">
+      <SEO
+        title={t('seo.experience.title')}
+        description={t('seo.experience.description')}
+        path="/experience"
+      />
+
       <SectionHeader
         sectionHighlightText={t('pages.experience.sectionHighlight')}
         sectionLabelText={t('pages.experience.sectionTitle')}

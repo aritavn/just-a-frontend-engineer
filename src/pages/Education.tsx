@@ -1,12 +1,19 @@
 import { useTranslation } from 'react-i18next';
 import { EducationCard, SectionHeader } from '../components';
 import { education } from '../data/education';
+import { SEO } from '../seo';
 
 const Education = () => {
   const { t } = useTranslation();
 
   return (
     <section id="education">
+      <SEO
+        title={t('seo.education.title')}
+        description={t('seo.education.description')}
+        path="/education"
+      />
+
       <SectionHeader
         sectionHighlightText={t('pages.education.sectionHighlight')}
         sectionLabelText={t('pages.education.sectionTitle')}

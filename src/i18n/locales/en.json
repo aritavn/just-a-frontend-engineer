@@ -80,6 +80,32 @@
       }
     }
   },
+  "seo": {
+    "home": {
+      "title": "Home",
+      "description": "Rita Nunes is a Frontend Engineer based in Lisbon, building pixel-perfect, accessible web experiences with React, Angular, and TypeScript."
+    },
+    "education": {
+      "title": "Education",
+      "description": "Rita Nunes' academic background — degrees, certifications, and lifelong learning in computer science, design, and software engineering."
+    },
+    "skills": {
+      "title": "Skills",
+      "description": "Explore Rita Nunes' technical toolkit — React, Angular, TypeScript, Next.js, accessibility, performance optimisation, and more."
+    },
+    "experience": {
+      "title": "Experience",
+      "description": "Rita Nunes' professional journey as a Frontend Engineer — roles at OLX and other companies, delivering large-scale web platforms with React, Angular, and TypeScript."
+    },
+    "person": {
+      "title": "The Person",
+      "description": "Get to know Rita Nunes beyond the code — interests, travels, personal facts, and the curiosity that drives her as a creator and collaborator."
+    },
+    "cookiePolicy": {
+      "title": "Cookie Policy",
+      "description": "Cookie policy for Rita Nunes' portfolio — how cookies are used, what Google Analytics collects, and how to manage your preferences."
+    }
+  },
   "pages": {
     "common": {
       "section": "Section:"
