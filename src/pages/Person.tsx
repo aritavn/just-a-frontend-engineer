@@ -10,6 +10,7 @@ const Person = () => {
       <SEO
         title={t('seo.person.title')}
         description={t('seo.person.description')}
+        keywords={t('seo.person.keywords')}
         path="/person"
       />
 

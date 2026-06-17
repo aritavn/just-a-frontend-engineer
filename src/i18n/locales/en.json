@@ -83,23 +83,28 @@
   "seo": {
     "home": {
       "title": "Home",
-      "description": "Rita Nunes is a Frontend Engineer based in Lisbon, building pixel-perfect, accessible web experiences with React, Angular, and TypeScript."
+      "description": "Rita Nunes is a Frontend Engineer based in Lisbon with expertise in React, Angular, TypeScript, and Next.js — specialising in accessible, high-performance web interfaces and modern frontend architecture.",
+      "keywords": "frontend engineer Lisbon, React developer Portugal, Angular developer, portfolio"
     },
     "education": {
       "title": "Education",
-      "description": "Rita Nunes' academic background — degrees, certifications, and lifelong learning in computer science, design, and software engineering."
+      "description": "Academic background of Rita Nunes, Frontend Engineer based in Lisbon — degrees and continuous learning in software engineering, computer science, and web development.",
+      "keywords": "frontend engineer education, computer science degree, software engineering, web development studies"
     },
     "skills": {
       "title": "Skills",
-      "description": "Explore Rita Nunes' technical toolkit — React, Angular, TypeScript, Next.js, accessibility, performance optimisation, and more."
+      "description": "Technical skills of Rita Nunes, Frontend Engineer — React, Angular, TypeScript, Next.js, HTML5, CSS3, accessibility (WCAG), testing with Playwright and Vitest, and AI-assisted development.",
+      "keywords": "frontend engineer skills, React, Angular, TypeScript, Next.js, accessibility WCAG"
     },
     "experience": {
       "title": "Experience",
-      "description": "Rita Nunes' professional journey as a Frontend Engineer — roles at OLX and other companies, delivering large-scale web platforms with React, Angular, and TypeScript."
+      "description": "Career history of Rita Nunes, Frontend Engineer — building large-scale web platforms at OLX and other companies using React, Angular, TypeScript, and Next.js.",
+      "keywords": "frontend engineer experience, React developer career, Angular developer Lisbon, OLX frontend, web developer portfolio"
     },
     "person": {
       "title": "The Person",
-      "description": "Get to know Rita Nunes beyond the code — interests, travels, personal facts, and the curiosity that drives her as a creator and collaborator."
+      "description": "Get to know Rita Nunes, a Frontend Engineer from Lisbon — her interests, personality, travels, and the curiosity that shapes her approach to web development.",
+      "keywords": "Rita Nunes frontend engineer, about, Lisbon developer, web developer personality"
     },
     "cookiePolicy": {
       "title": "Cookie Policy",

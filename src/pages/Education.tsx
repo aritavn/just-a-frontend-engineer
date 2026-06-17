@@ -11,6 +11,7 @@ const Education = () => {
       <SEO
         title={t('seo.education.title')}
         description={t('seo.education.description')}
+        keywords={t('seo.education.keywords')}
         path="/education"
       />
 

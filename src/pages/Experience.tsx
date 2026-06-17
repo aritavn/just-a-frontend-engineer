@@ -25,6 +25,7 @@ const Experience = () => {
       <SEO
         title={t('seo.experience.title')}
         description={t('seo.experience.description')}
+        keywords={t('seo.experience.keywords')}
         path="/experience"
       />
 

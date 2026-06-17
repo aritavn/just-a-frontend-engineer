@@ -4,16 +4,29 @@ const OG_IMAGE = `${BASE_URL}/og-image.png`;
 interface SEOProps {
   title: string;
   description: string;
+  keywords?: string;
   path?: string;
   type?: 'website' | 'profile';
 }
 
-const SEO = ({ title, description, path = '', type = 'website' }: SEOProps) => {
-  const fullTitle =
-    path === '' || path === '/'
-      ? 'Just a Frontend Engineer | Rita Nunes'
-      : `${title} | Rita Nunes`;
+const BASE_KEYWORDS =
+  'frontend engineer, frontend developer, React developer, Angular developer, TypeScript, JavaScript, web developer Lisbon, Rita Nunes';
+
+const SEO = ({
+  title,
+  description,
+  keywords,
+  path = '',
+  type = 'website',
+}: SEOProps) => {
+  const isHome = path === '' || path === '/';
+  const fullTitle = isHome
+    ? 'Rita Nunes | Frontend Engineer — Lisbon'
+    : `${title} | Rita Nunes — Frontend Engineer`;
   const url = `${BASE_URL}${path}`;
+  const allKeywords = keywords
+    ? `${keywords}, ${BASE_KEYWORDS}`
+    : BASE_KEYWORDS;
 
   return (
     <>
@@ -21,6 +34,10 @@ const SEO = ({ title, description, path = '', type = 'website' }: SEOProps) => {
       <meta
         name="description"
         content={description}
+      />
+      <meta
+        name="keywords"
+        content={allKeywords}
       />
       <link
         rel="canonical"

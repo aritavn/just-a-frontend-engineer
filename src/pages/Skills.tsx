@@ -11,6 +11,7 @@ const Skills = () => {
       <SEO
         title={t('seo.skills.title')}
         description={t('seo.skills.description')}
+        keywords={t('seo.skills.keywords')}
         path="/skills"
       />
 
