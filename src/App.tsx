@@ -8,6 +8,7 @@ import {
   SkipLink,
 } from './components';
 import {
+  AccessibilityStatement,
   CookiePolicy,
   Education,
   Experience,
@@ -48,6 +49,10 @@ function App() {
           <Route
             path="/projects"
             element={<Projects />}
+          />
+          <Route
+            path="/accessibility-statement"
+            element={<AccessibilityStatement />}
           />
           <Route
             path="/cookie-policy"

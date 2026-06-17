@@ -32,6 +32,18 @@ const Footer = () => {
         </p>
         <div className="footer-legal">
           <Link
+            to="/accessibility-statement"
+            className="footer-legal-link"
+          >
+            {t('footer.accessibilityStatement')}
+          </Link>
+          <span
+            aria-hidden="true"
+            className="footer-legal-separator"
+          >
+            •
+          </span>
+          <Link
             to="/cookie-policy"
             className="footer-legal-link"
           >

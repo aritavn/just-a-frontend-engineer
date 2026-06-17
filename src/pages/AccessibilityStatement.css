@@ -1,0 +1,88 @@
+.accessibility-statement section {
+  padding: 1rem;
+}
+
+.accessibility-statement {
+  padding: clamp(3rem, 8vw, 6rem) var(--layout-inline-padding);
+  min-height: 60vh;
+}
+
+.accessibility-statement-inner {
+  max-width: 820px;
+  margin: 0 auto;
+}
+
+.accessibility-statement-header {
+  margin-bottom: 3rem;
+}
+
+.accessibility-statement-label {
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--accent);
+  display: block;
+  margin-bottom: 1rem;
+  font-family: 'Courier New', monospace;
+}
+
+.accessibility-statement-title {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 850;
+  color: var(--text-heading);
+  line-height: 1.1;
+  margin-bottom: 0.75rem;
+}
+
+.accessibility-statement-updated {
+  color: var(--muted);
+  font-size: 0.88rem;
+  font-family: 'Courier New', monospace;
+}
+
+.accessibility-statement-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.accessibility-statement-section {
+  border-left: 2px solid rgba(var(--accent-rgb), 0.35);
+  padding-left: 1.5rem;
+}
+
+.accessibility-statement-section-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 0.75rem;
+}
+
+.accessibility-statement-section p,
+.accessibility-statement-section li {
+  color: var(--text-secondary);
+  font-size: 1rem;
+  line-height: 1.75;
+  margin: 0;
+}
+
+.accessibility-statement-list {
+  display: grid;
+  gap: 0.75rem;
+  padding-left: 1rem;
+}
+
+.accessibility-statement-link {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+  transition: opacity 0.2s ease;
+}
+
+.accessibility-statement-link:hover {
+  opacity: 0.75;
+  text-decoration: underline;
+}

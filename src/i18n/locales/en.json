@@ -107,6 +107,11 @@
       "title": "Projects",
       "description": "Selected frontend work, case studies, and product showcases.",
       "keywords": "frontend projects, portfolio projects, React projects, web applications"
+    },
+    "accessibilityStatement": {
+      "title": "Accessibility Statement",
+      "description": "Accessibility statement for Rita Nunes' portfolio — the site is designed for inclusive use, with accessibility features and known limitations clearly disclosed.",
+      "keywords": "accessibility statement, WCAG, inclusive web design, accessible portfolio"
     }
   },
   "pages": {
@@ -182,12 +187,48 @@
       "github": "GitHub",
       "linkedin": "LinkedIn"
     },
-    "cookiePolicy": "Cookie Policy"
+    "cookiePolicy": "Cookie Policy",
+    "accessibilityStatement": "Accessibility statement"
+  },
+  "accessibilityStatement": {
+    "label": "Accessibility",
+    "title": "Accessibility Statement",
+    "lastUpdated": "Last updated: June 2026",
+    "intro": {
+      "heading": "My commitment",
+      "body": "This portfolio is designed to be accessible to people with a wide range of abilities and technologies. I follow web accessibility best practices to ensure clear navigation, readable content, and keyboard-first interaction."
+    },
+    "standards": {
+      "heading": "Standards and compliance",
+      "body": "The site is built with accessible HTML structure, semantic headings, and thoughtful ARIA usage where appropriate. It aims to meet WCAG 2.1 Level AA guidelines for colour contrast, navigation, and content structure."
+    },
+    "features": {
+      "heading": "Accessibility features",
+      "keyboardNavigation": "Keyboard-friendly navigation and focus states across the site.",
+      "screenReaderSupport": "Semantic markup and descriptive labels to help screen readers understand the page.",
+      "contrastAndTypography": "High contrast text, readable font sizing, and spacing for better readability.",
+      "responsiveDesign": "Responsive layout that works across desktop, tablet, and mobile screens."
+    },
+    "limitations": {
+      "heading": "Known limitations",
+      "body": "This site may still have limitations in certain areas. Below are a few examples of issues that may exist as the site continues to evolve:",
+      "examples": {
+        "keyboard": "Keyboard focus may not always behave consistently inside custom interactive components.",
+        "screenReader": "Some content or labels may not be as clear as they could be for screen reader users.",
+        "colors": "Some colour combinations may be borderline for low vision users, especially on accent text or buttons.",
+        "spacing": "There may be areas where spacing could be improved for better readability and focus visibility.",
+        "animations": "Motion and animation effects may not include reduced-motion alternatives for users who prefer less animation."
+      }
+    },
+    "feedback": {
+      "heading": "Feedback and contact",
+      "body": "If you encounter any issues while using this site, feel free to reach out."
+    }
   },
   "cookiePolicy": {
     "label": "Legal",
     "title": "Cookie Policy",
-    "lastUpdated": "Last updated: June 2025",
+    "lastUpdated": "Last updated: June 2026",
     "whatAreCookies": {
       "heading": "What are cookies?",
       "body": "Cookies are small text files placed on your device by websites you visit. They are widely used to make websites work, or work more efficiently, and to provide information to the owners of the site."
