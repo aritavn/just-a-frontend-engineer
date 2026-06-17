@@ -56,30 +56,6 @@ const HomepageCards = () => {
         </div>
       </Link>
       <Link
-        to="/education"
-        className="page-card homepage-card reveal-init"
-      >
-        <div className="page-card-content">
-          <div className="page-card-headline">
-            {t('homepage.cards.education.section')}
-          </div>
-          <h2>
-            {t('homepage.cards.education.titleLine1')}
-            <br />
-            {t('homepage.cards.education.titleLine2')}
-          </h2>
-          <div className="tech-stack">
-            {t('homepage.cards.education.techStack')}
-          </div>
-          <p>{t('homepage.cards.education.description')}</p>
-          <div className="page-card-link">
-            <span className="project-link">
-              {t('homepage.cards.education.cta')}
-            </span>
-          </div>
-        </div>
-      </Link>
-      <Link
         to="/person"
         className="page-card homepage-card reveal-init"
       >

@@ -8,6 +8,7 @@ export { default as Hero } from './Hero/Hero';
 export { default as HomepageCards } from './HomePageCards/HomepageCards';
 export { default as Interests } from './Interests/Interests';
 export { default as PhotoSlider } from './PhotoSlider/PhotoSlider';
+export { default as ProjectCard } from './ProjectCard/ProjectCard';
 export { default as ScrollToTop } from './ScrollToTop/ScrollToTop';
 export { default as SectionHeader } from './SectionHeader/SectionHeader';
 export { default as SkillCard } from './SkillCard/SkillCard';

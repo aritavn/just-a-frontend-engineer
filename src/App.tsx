@@ -14,6 +14,7 @@ import {
   Home,
   NotFound,
   Person,
+  Projects,
   Skills,
 } from './pages';
 
@@ -43,6 +44,10 @@ function App() {
           <Route
             path="/person"
             element={<Person />}
+          />
+          <Route
+            path="/projects"
+            element={<Projects />}
           />
           <Route
             path="/cookie-policy"

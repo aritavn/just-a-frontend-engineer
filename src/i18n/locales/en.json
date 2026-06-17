@@ -8,6 +8,7 @@
       "experience": "The Experience",
       "education": "The Education",
       "person": "The Person",
+      "projects": "The Projects",
       "closeMenu": "Close Menu",
       "openMenu": "Open Menu"
     },
@@ -62,14 +63,6 @@
         "description": "See my professional journey, roles, and impactful projects I've contributed to.",
         "cta": "View experience"
       },
-      "education": {
-        "section": "ACADEMIC BACKGROUND",
-        "titleLine1": "the",
-        "titleLine2": "education",
-        "techStack": "Degrees",
-        "description": "Discover my academic background and lifelong learning path.",
-        "cta": "View education"
-      },
       "person": {
         "section": "BEYOND THE CODE",
         "titleLine1": "the",
@@ -109,6 +102,11 @@
     "cookiePolicy": {
       "title": "Cookie Policy",
       "description": "Cookie policy for Rita Nunes' portfolio — how cookies are used, what Google Analytics collects, and how to manage your preferences."
+    },
+    "projects": {
+      "title": "Projects",
+      "description": "Selected frontend work, case studies, and product showcases.",
+      "keywords": "frontend projects, portfolio projects, React projects, web applications"
     }
   },
   "pages": {
@@ -166,6 +164,13 @@
       "sectionHighlight": "Skills",
       "sectionTitle": "Technical Arsenal",
       "title": "The Skills"
+    },
+    "projects": {
+      "sectionHighlight": "Projects",
+      "sectionTitle": "Portfolio Showcase",
+      "title": "The Projects",
+      "viewLive": "View live",
+      "viewCode": "View code"
     }
   },
   "footer": {

@@ -16,7 +16,7 @@
   justify-content: space-between;
   gap: 1.5rem;
   width: 100%;
-  max-width: var(--layout-max-width);
+  max-width: 1400px;
   margin-inline: auto;
   padding: 1.5rem var(--layout-inline-padding);
 }
@@ -128,6 +128,10 @@
     opacity: 0;
     pointer-events: none;
     transition: all 240ms ease;
+  }
+
+  :root[data-theme='light'] .nav-links {
+    background: rgba(255, 255, 255, 0.95);
   }
 
   .nav-links ul {

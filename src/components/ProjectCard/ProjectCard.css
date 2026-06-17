@@ -1,0 +1,115 @@
+.project-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  clip-path: polygon(
+    0 0,
+    calc(100% - 30px) 0,
+    100% 30px,
+    100% 100%,
+    30px 100%,
+    0 calc(100% - 30px)
+  );
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  border-color: var(--accent);
+  background: rgba(var(--accent-rgb), 0.08);
+}
+
+.project-card-media {
+  position: relative;
+  width: 100%;
+  height: 235px;
+  overflow: hidden;
+  background: rgba(var(--accent-rgb), 0.05);
+}
+
+.project-card-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.project-card-placeholder {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--muted);
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 18px;
+}
+
+.project-card-content {
+  padding: 30px 32px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1;
+}
+
+.project-card-header {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.project-card h2 {
+  margin: 0;
+  font-size: clamp(1.4rem, 2vw, 1.8rem);
+  color: var(--text-heading);
+  font-weight: 800;
+}
+
+.project-tech {
+  color: var(--muted);
+  font-size: 0.95rem;
+  font-family: 'Courier New', monospace;
+}
+
+.project-card-description {
+  margin: 0;
+  line-height: 1.8;
+  color: var(--muted);
+}
+
+.project-highlights {
+  margin: 0;
+  padding-left: 1.2rem;
+  color: var(--muted);
+}
+
+.project-highlights li {
+  margin-bottom: 0.55rem;
+}
+
+.project-card-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: auto;
+}
+
+.project-card-links a {
+  color: var(--accent);
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 0.85rem;
+}
+
+.project-card-links a:hover,
+.project-card-links a:focus-visible {
+  text-decoration: underline;
+}

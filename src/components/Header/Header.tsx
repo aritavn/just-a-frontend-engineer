@@ -15,6 +15,7 @@ const Header = () => {
     { to: '/experience', label: 'header.nav.experience' },
     { to: '/education', label: 'header.nav.education' },
     { to: '/person', label: 'header.nav.person' },
+    { to: '/projects', label: 'header.nav.projects' },
   ];
 
   function toggle(): void {
@@ -41,7 +42,9 @@ const Header = () => {
           type="button"
           className={`nav-toggle ${open ? 'open' : ''}`}
           aria-controls="header-nav"
-          aria-label={open ? t('header.nav.closeMenu') : t('header.nav.openMenu')}
+          aria-label={
+            open ? t('header.nav.closeMenu') : t('header.nav.openMenu')
+          }
           aria-expanded={open}
           onClick={toggle}
         >
