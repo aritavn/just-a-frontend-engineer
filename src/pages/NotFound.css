@@ -1,0 +1,40 @@
+.not-found {
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-alt);
+  margin-top: 80px;
+}
+
+.not-found-content {
+  text-align: center;
+  max-width: 600px;
+  padding: 40px;
+}
+
+.not-found-code {
+  font-size: 5rem;
+  color: var(--accent);
+  font-weight: 900;
+  margin: 0;
+}
+
+.not-found-title {
+  color: var(--text-heading);
+  font-weight: 800;
+  margin: 24px 0 20px;
+}
+
+.not-found-description {
+  color: var(--muted);
+  margin-bottom: 40px;
+}
+
+.not-found-actions {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
