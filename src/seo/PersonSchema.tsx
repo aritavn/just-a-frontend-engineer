@@ -6,7 +6,7 @@ const PersonSchema = () => {
     jobTitle: 'Frontend Engineer',
     description:
       'Frontend Engineer based in Lisbon, Portugal, specialising in React, Angular, TypeScript, and Next.js. Passionate about accessible, high-performance web interfaces and modern frontend architecture.',
-    url: 'https://justafrontendengineer.com',
+    url: 'https://www.justafrontendengineer.com',
     email: 'anaritavn+portfolio@gmail.com',
     sameAs: [
       'https://github.com/aritavn',
@@ -45,7 +45,7 @@ const PersonSchema = () => {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
     name: 'Rita Nunes — Frontend Engineer',
-    url: 'https://justafrontendengineer.com',
+    url: 'https://www.justafrontendengineer.com',
     description:
       'Portfolio of Rita Nunes, a Frontend Engineer based in Lisbon specialising in React, Angular, and TypeScript.',
     author: {

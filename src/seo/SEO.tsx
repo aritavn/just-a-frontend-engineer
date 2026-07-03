@@ -1,4 +1,4 @@
-const BASE_URL = 'https://justafrontendengineer.com';
+const BASE_URL = 'https://www.justafrontendengineer.com';
 const OG_IMAGE = `${BASE_URL}/og-image.png`;
 
 interface SEOProps {
