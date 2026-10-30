@@ -47,9 +47,9 @@ const ThemeSwitcher = () => {
   // Maintain independent accent for each theme
   const [accentDark, setAccentDark] = useState(() => {
     try {
-      return localStorage.getItem('site-accent-dark') || 'green';
+      return localStorage.getItem('site-accent-dark') || 'yellow';
     } catch {
-      return 'green';
+      return 'yellow';
     }
   });
 
@@ -225,4 +225,3 @@ const ThemeSwitcher = () => {
 };
 
 export default ThemeSwitcher;
-

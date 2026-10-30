@@ -27,7 +27,7 @@ export const interests = [
 ];
 
 export const quickFacts = [
-  { icon: '✈️', text: '25 countries explored' },
+  { icon: '✈️', text: '26 countries explored' },
   { icon: '☕', text: 'Coffee: ~3 cups/day' },
   { icon: '🔥', text: '__DUOLINGO_STREAK__' },
   { icon: '🌍', text: '4 continents reached' },

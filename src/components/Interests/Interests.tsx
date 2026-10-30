@@ -7,7 +7,7 @@ const Interests = () => {
   const { t } = useTranslation();
 
   const duolingoStart = useMemo<Date>(
-    () => new Date('2025-09-01T00:00:00Z'),
+    () => new Date('2025-09-06T00:00:00Z'),
     []
   );
   const today: Date = new Date();
